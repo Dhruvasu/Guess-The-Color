@@ -53,3 +53,8 @@ button {
 	font-size: inherit;
 	transition: all 0.5s;
 }
+
+button:hover {
+	color: white;
+	background: steelblue;
+}
