@@ -36,3 +36,8 @@ h1 {
 	line-height: 1.1;
 	padding: 20px 0;
 }
+
+.selected {
+	background: steelblue;
+	color: white;
+}
