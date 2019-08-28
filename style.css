@@ -13,3 +13,8 @@ body {
 	border-radius: 20%;
 	transition: background 1.0s;
 }
+
+.container {
+	max-width: 600px;
+	margin: 20px auto;
+}
