@@ -18,3 +18,10 @@ body {
 	max-width: 600px;
 	margin: 20px auto;
 }
+
+#stripe {
+	background: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
