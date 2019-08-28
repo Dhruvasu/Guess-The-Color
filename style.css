@@ -58,3 +58,13 @@ button:hover {
 	color: white;
 	background: steelblue;
 }
+
+#message {
+	display: inline-block;
+	width: 20%;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+}
