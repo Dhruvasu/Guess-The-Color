@@ -34,6 +34,12 @@ hardBtn.addEventListener("click", function() {
 
 colors = generateColors(6);
 init();
+resetButton.addEventListener("click", function() {
+	this.textContent = "New Colors";
+	document.querySelector("h1").style.backgroundColor = "steelblue";
+	reset();
+});
+colorDisplay.textContent = pickedColor;
 
 function init() {
 	squares = document.querySelectorAll(".square");
