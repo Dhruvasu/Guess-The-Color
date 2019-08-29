@@ -34,6 +34,18 @@ hardBtn.addEventListener("click", function() {
 
 colors = generateColors(6);
 init();
+
+function init() {
+	squares = document.querySelectorAll(".square");
+	colorDisplay = document.getElementById("colorDisplay");
+	messageDisplay = document.querySelector("#message");
+	pickedColor = colors[pickColor(colors.length)];
+	for (var i = 0; i < squares.length; i++) {
+		squares[i].style.backgroundColor = colors[i];
+	}
+	colorDisplay.textContent = pickedColor;
+}
+
 function generateColors(num) {
 	var listOfColors = [];
 	for (var i = 0; i < num; i++) {
