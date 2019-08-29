@@ -68,6 +68,24 @@ function init() {
 	colorDisplay.textContent = pickedColor;
 }
 
+function reset() {
+	var x = document.getElementsByClassName("hide");
+	if (numOfSquares == 6) {
+		x[0].style.display = "block";
+		x[1].style.display = "block";
+		x[2].style.display = "block";
+		colors = generateColors(6);
+	}
+	else {
+		x[0].style.display = "none";
+		x[1].style.display = "none";
+		x[2].style.display = "none";
+		colors = generateColors(3);
+	}
+	init();
+	messageDisplay.textContent = "";
+}
+
 function changeColors(color) {
 	for (var i = 0; i < squares.length; i++) {
 		squares[i].style.backgroundColor = color;
